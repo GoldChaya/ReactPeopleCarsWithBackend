@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PeopleCars.Data;
+using PeopleCars.Web.NewFolder;
 
 namespace PeopleCars.Web.Controllers
 {
@@ -43,17 +44,17 @@ namespace PeopleCars.Web.Controllers
         }
         [HttpGet]
         [Route("GetCars")]
-        public void GetCars (int id)
+        public List<Car> GetCars (int id)
         {
             var repo = new PeopleCarsRepository(_connectionString);
-            repo.GetCarsForPerson(id);
+            return repo.GetCarsForPerson(id);
         }
         [HttpPost]
         [Route("deletecars")]
-        public void DeleteCars(int id)
+        public void DeleteCars(DeleteCarId vm)
         {
             var repo = new PeopleCarsRepository(_connectionString);
-            repo.DeleteCars(id);
+            repo.DeleteCars(vm.Id);
         }
     }
 }
