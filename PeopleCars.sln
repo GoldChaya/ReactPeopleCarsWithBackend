@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleCars.Web", "PeopleCars.Web\PeopleCars.Web.csproj", "{FAC24C43-C989-48CF-AB9D-E2F5538F2532}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleCars.Data", "PeopleCars.Data\PeopleCars.Data.csproj", "{6ACAA2C3-6070-4534-9BA8-FC82B052A62C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAC24C43-C989-48CF-AB9D-E2F5538F2532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAC24C43-C989-48CF-AB9D-E2F5538F2532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAC24C43-C989-48CF-AB9D-E2F5538F2532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAC24C43-C989-48CF-AB9D-E2F5538F2532}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ACAA2C3-6070-4534-9BA8-FC82B052A62C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ACAA2C3-6070-4534-9BA8-FC82B052A62C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ACAA2C3-6070-4534-9BA8-FC82B052A62C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ACAA2C3-6070-4534-9BA8-FC82B052A62C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D95E83C5-611D-4556-B4CC-155959E4BA89}
+	EndGlobalSection
+EndGlobal
