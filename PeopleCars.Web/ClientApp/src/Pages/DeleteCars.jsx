@@ -19,7 +19,6 @@ class DeleteCars extends React.Component {
     onDeleteAllClick = async () => {
         const { id } = this.props.match.params;
         await axios.post('/api/peoplecars/deletecars', { id });
-        console.log('delete button clicked');
         this.props.history.push('/');
     }
 
@@ -45,7 +44,6 @@ class DeleteCars extends React.Component {
                                 </tr>
                             </thead>
                             <tbody>
-                                {console.log(cars)}
                         {cars && cars
                             .filter(p => `${p.make.toLowerCase()} ${p.model.toLowerCase()}`.includes(searchText))
                             .map(p => <CarRow car={p} key={p.id} />)}
@@ -55,7 +53,7 @@ class DeleteCars extends React.Component {
                 </div>
                 <div className="row">
                     <div className="col-md-12">
-                        <h3>Are you sure you want to delete all of these cars?</h3>
+                        <h3>Are you sure you want to delete all of this person's cars?</h3>
                     </div>
                     <div className="col-md-6" style={{ marginTop: 20 }}>
                         <Link to='/' style={{ textDecoration: 'none' }}>
